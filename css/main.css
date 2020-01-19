@@ -1,0 +1,67 @@
+/* DISPLAY */
+*{
+    padding: 0;
+    margin: 0;
+}
+.dev{
+    text-align: center;
+    padding: 25px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: var(--column-number);
+    grid-template-rows: var(--row-number)
+}
+
+/* VARIABLES */
+
+/* COLUMNS */
+.column-auto{
+    --column-number: auto;
+}
+.column-1{
+    --column-number: 1fr;
+}
+.column-2{
+    --column-number: repeat(2,1fr);
+}
+.column-3{
+    --column-number: repeat(3,1fr);
+}
+.column-4{
+    --column-number: repeat(4,1fr);
+}
+.column-5{
+    --column-number: repeat(5,1fr);
+}
+.column-6{
+    --column-number: repeat(6,1fr);
+}
+
+/* ROWS */
+.row-auto{
+    --row-number: auto;
+}
+.row-1{
+    --row-number: 1fr;
+}
+.row-2{
+    --row-number: repeat(2,1fr);
+}
+.row-3{
+    --row-number: repeat(3,1fr);
+}
+.row-4{
+    --row-number: repeat(4,1fr);
+}
+.row-5{
+    --row-number: repeat(5,1fr);
+}
+.row-6{
+    --row-number: repeat(6,1fr);
+}
+
+/* ITEMS */
+.item-1{
+    grid-area: item-1;
+}
